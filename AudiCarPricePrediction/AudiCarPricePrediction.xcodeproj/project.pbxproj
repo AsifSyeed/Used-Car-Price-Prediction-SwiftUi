@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		8787BD1B292DE8BC0019859D /* AudiCarPricePredictionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787BD1A292DE8BC0019859D /* AudiCarPricePredictionApp.swift */; };
-		8787BD1D292DE8BC0019859D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787BD1C292DE8BC0019859D /* ContentView.swift */; };
+		8787BD1D292DE8BC0019859D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787BD1C292DE8BC0019859D /* MainView.swift */; };
 		8787BD1F292DE8BD0019859D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8787BD1E292DE8BD0019859D /* Assets.xcassets */; };
 		8787BD22292DE8BD0019859D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8787BD21292DE8BD0019859D /* Preview Assets.xcassets */; };
 		8787BD2A292DE9040019859D /* AudiCarPriceModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8787BD29292DE9040019859D /* AudiCarPriceModel.mlmodel */; };
+		8787BD2E292DFD300019859D /* PriceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787BD2D292DFD300019859D /* PriceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8787BD17292DE8BC0019859D /* AudiCarPricePrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudiCarPricePrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8787BD1A292DE8BC0019859D /* AudiCarPricePredictionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiCarPricePredictionApp.swift; sourceTree = "<group>"; };
-		8787BD1C292DE8BC0019859D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8787BD1C292DE8BC0019859D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8787BD1E292DE8BD0019859D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8787BD21292DE8BD0019859D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8787BD29292DE9040019859D /* AudiCarPriceModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AudiCarPriceModel.mlmodel; path = ../../../AudiCarPriceModel.mlmodel; sourceTree = "<group>"; };
+		8787BD2D292DFD300019859D /* PriceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 		8787BD19292DE8BC0019859D /* AudiCarPricePrediction */ = {
 			isa = PBXGroup;
 			children = (
+				8787BD2B292DFD090019859D /* View */,
+				8787BD2C292DFD170019859D /* ViewModel */,
 				8787BD1A292DE8BC0019859D /* AudiCarPricePredictionApp.swift */,
-				8787BD1C292DE8BC0019859D /* ContentView.swift */,
 				8787BD1E292DE8BD0019859D /* Assets.xcassets */,
 				8787BD28292DE8EF0019859D /* Supporting Files */,
 				8787BD20292DE8BD0019859D /* Preview Content */,
@@ -76,6 +79,22 @@
 				8787BD29292DE9040019859D /* AudiCarPriceModel.mlmodel */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8787BD2B292DFD090019859D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8787BD1C292DE8BC0019859D /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8787BD2C292DFD170019859D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8787BD2D292DFD300019859D /* PriceViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8787BD1D292DE8BC0019859D /* ContentView.swift in Sources */,
+				8787BD1D292DE8BC0019859D /* MainView.swift in Sources */,
 				8787BD2A292DE9040019859D /* AudiCarPriceModel.mlmodel in Sources */,
+				8787BD2E292DFD300019859D /* PriceViewModel.swift in Sources */,
 				8787BD1B292DE8BC0019859D /* AudiCarPricePredictionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
