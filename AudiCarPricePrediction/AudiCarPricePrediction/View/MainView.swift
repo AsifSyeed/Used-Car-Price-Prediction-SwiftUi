@@ -92,11 +92,29 @@ struct MainView: View {
                         .font(.largeTitle)
                     Spacer()
                 }
-                
                 Spacer()
+                    .frame(height: 30)
+                Button {
+                    viewModel.calculatePrice()
+                    viewModel.isShowAlert = true
+                } label: {
+                    Text("Calculate")
+                        .fontWeight(.light)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .padding(15)
+                        .background(Color(.gray))
+                        .clipShape(Capsule())
+                        .shadow(color: Color(.gray).opacity(0.4), radius: 5, x: 5, y: 5)
+                }
+                .alert(isPresented: $viewModel.isShowAlert) {
+                    Alert(
+                        title: Text(viewModel.alertTitle),
+                        message: Text(viewModel.alertMessage),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
-            Spacer()
-                .frame(height: 100)
         }
     }
 }
